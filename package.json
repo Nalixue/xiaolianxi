@@ -1,16 +1,25 @@
 {
-  "name": "fis-command-server-script",
-  "description": "This is an simple fis server script.",
-  "version": "0.0.0",
-  "author": "FIS Team <fis@baidu.com>",
-  "homepage": "http://fis.baidu.com/",
+  "name": "default",
+  "version": "1.0.0",
+  "description": "Default template for fis scaffold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fis-scaffold/default.git"
+  },
   "keywords": [
-    "fis"
+    "fis",
+    "scaffold"
   ],
-  "main": "server.js",
+  "author": "fex",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/fis-scaffold/default/issues"
+  },
+  "homepage": "https://github.com/fis-scaffold/default",
   "dependencies": {
-    "express": "4.10.1",
-    "serve-index": "1.5.0",
-    "yog-devtools": "0.0.4"
   }
 }

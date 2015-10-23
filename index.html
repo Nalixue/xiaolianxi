@@ -1,4 +1,31 @@
-<html lang="en"><head><meta charset="UTF-8"><link rel="stylesheet" href="/less/main.css"><title>练习</title><script src="/js/jquery-1.11.3.min_6163309.js"></script><script src="/js/underscore_055e6d6.js"></script><body><div class="main"><header><ul class="introduce clearfix"><li><img src="/images/1_4596d46.jpg?__sprite" alt="头像"></li><li>naliuxe</li><li></li></ul><p><input type="search" placeholder="搜索"></p><ul class="icon clearfix"><li><img src="/images/tu1_281ce12.png?__sprite" alt="icon1"></li><li><img src="/images/tu2_ca28552.png?__sprite" alt="icon1"></li><li><img src="/images/tu3_5e7d722.png?__sprite" alt="icon1"></li></ul></header><article id="container"><script type="text/template" id="tpl"><% _.each(data, function(val) {%>
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./less/main.less">
+    <title>练习</title>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/underscore.js"></script>
+<body>
+    <div class="main">
+        <header>
+            <ul class="introduce clearfix">
+                <li><img src="./images/1.jpg?__sprite" alt="头像"></li>
+                <li>naliuxe</li>
+                <li></li>
+            </ul>
+            <p>
+                <input type="search" placeholder="搜索">
+            </p>
+            <ul class="icon clearfix">
+                <li><img src="./images/tu1.png?__sprite" alt="icon1"></li>
+                <li><img src="./images/tu2.png?__sprite" alt="icon1"></li>
+                <li><img src="./images/tu3.png?__sprite" alt="icon1"></li>
+            </ul>
+        </header>
+
+        <article id="container">
+            <script type="text/template" id="tpl">
+                <% _.each(data, function(val) {%>
                     <section>
                         <ul class="con-tit clearfix">
                           <li><img src='<%= val.hImg %>' alt="头像"></li>
@@ -14,7 +41,12 @@
                           <% });%>
                         </ul>
                     </section>
-                <% });%></script></article></div><script type="text/javascript">var data = [
+                <% });%>
+            </script>
+        </article>
+    </div>
+    <script type="text/javascript">
+      var data = [
         {
           name: 'IT时代周刊',
           hImg: './images/1.jpg',
@@ -51,4 +83,7 @@
         }
       ];
       var compiled = _.template($('#tpl').html());
-      $('#container').html(compiled(data));</script></body></head></html>
+      $('#container').html(compiled(data));
+    </script>
+</body>
+</html>
